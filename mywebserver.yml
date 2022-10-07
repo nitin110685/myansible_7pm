@@ -10,4 +10,4 @@
         - name: i want to start/stop webserver on ubuntu node
           service:
              name: apache2
-             state: stopped
+             state: started
