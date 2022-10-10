@@ -15,4 +15,17 @@
           when: ansible_os_family=="Debian"
 
 
+        - name: i want to install webserver on RedHat node
+          yum:
+             name: httpd
+             state: present
+          when: ansible_os_family=="RedHat"
+
+        - name: i want to start/stop webserver on Redhat node
+          service:
+             name: httpd
+             state: started
+          when: ansible_os_family=="RedHat"
+
+
         
