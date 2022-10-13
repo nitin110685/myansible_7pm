@@ -9,3 +9,8 @@
 [Networkserver]
 172.31.22.76
 172.31.22.87
+
+
+[webserverhost:vars]
+mywebserveronubuntu= apache2
+mywebserveronredhad= httpd
