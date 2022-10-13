@@ -12,5 +12,5 @@
 
 
 [webserverhost:vars]
-mywebserveronubuntu= apache2
+mywebserveronubuntu= apache22222
 mywebserveronredhad= httpd
