@@ -13,7 +13,8 @@
        apt: 
           name: wget
           stateee: present
-       tags: mywget 
+       tags: mywget
+       ignore_errors: yes
 
 
      - name: i want to install git 
