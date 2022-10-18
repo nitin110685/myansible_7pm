@@ -1,0 +1,4 @@
+- name: i want to creat file
+  file:
+      path: /home/ubuntu/myvertex.txt
+      state: touch

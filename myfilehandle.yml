@@ -2,13 +2,9 @@
 - hosts: 172.31.5.99
   become: yes
   tasks:
-    - name: i want to creat file
-      file:
-        path: /home/ubuntu/myvertex.txt
-        state: touch
+   - include_tasks: myfile.yml
 
-
-    - name: i want to install webserver
-      apt:
+   - name: i want to install webserver
+     apt:
         name: apache2
         state: present
