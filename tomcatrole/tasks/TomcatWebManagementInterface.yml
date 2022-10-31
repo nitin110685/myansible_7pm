@@ -1,0 +1,16 @@
+--- 
+# Step 5.4 :  Open a file called tomcat.service
+ - name: editing the tomcat-users
+   template:
+        src: template/tomcatuser.j2
+        dest: /opt/tomcat/conf/tomcat-users.xml
+
+ - name: change manage context file
+   template:
+        src: template/Managerapp.j2
+        dest: /opt/tomcat/webapps/manager/META-INF/context.xml
+
+ - name: change host manage context file
+   template:
+        src: template/HostManagerapp.j2
+        dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml
