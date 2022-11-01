@@ -1,0 +1,5 @@
+---
+# vars file for tomcatrole
+
+mysqlpasswd: vertex123
+
