@@ -1,5 +1,5 @@
 --- 
-- hosts: applicationserver
+- hosts: tag_Name_myAnsiblenodes
   become: yes
   roles:
    - {role: tomcatrole , when: ansible_os_family=="Debian" }
